@@ -1,0 +1,40 @@
+{
+  "movies": [
+    {
+      "movieName": "3 idiots",
+      "movieRating": "7",
+      "movieType": "comedy",
+      "movieReleaseYear": "2006",
+      "movieDuration": "1h 44m",
+      "movieDirector": "Rajkumar Irani",
+      "id": 1
+    },
+    {
+      "movieName": "Badmash Company",
+      "movieRating": "6",
+      "movieType": "Romantic",
+      "movieReleaseYear": "5343",
+      "movieDuration": "3h 5m",
+      "movieDirector": "Dont Know",
+      "id": 5
+    },
+    {
+      "movieName": "Jab We Met",
+      "movieRating": "4",
+      "movieType": "ded",
+      "movieReleaseYear": "444",
+      "movieDuration": "1h 55m",
+      "movieDirector": "Dont Know",
+      "id": 9
+    },
+    {
+      "movieName": "Jab Harry Met Sejal",
+      "movieRating": "8",
+      "movieType": "bollywood",
+      "movieReleaseYear": "2021",
+      "movieDuration": "1h 3m",
+      "movieDirector": "Dont Know",
+      "id": 10
+    }
+  ]
+}
