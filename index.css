@@ -1,0 +1,50 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.heading{
+    text-align: center;
+    margin-top: 3%;
+}
+.main-section{
+    background-color: rgb(82, 136, 218);
+    margin: 3% 3% 0 3%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    width: 94%;
+    color: rgb(24, 11, 59);
+}
+.movies-form{
+    border: 2px solid black;
+    width: 30%;
+    padding: 2%;
+}
+.movies-display{
+    border: 2px solid black;
+    width: 65%;
+    padding: 2%;
+    height: 620px;
+}
+#error-msg{
+    color: red;
+}
+.searchBar input{
+    /* background: rgba(58, 57, 57, 0.5); */
+    width: 500px;
+}
+.searchBar{
+    width: 550px;
+    /* background: rgba(131, 107, 107, 0.5); */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.searchIcon{
+    margin-left: -30px;
+
+}

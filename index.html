@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <h1 class="heading">Movies Info App</h1>
+
+    <div class="main-section">
+        <div class="movies-form">
+            <form id="movieAddForm">
+                <h3>Movie Details:</h3>
+                <!-- Movie Name -->
+                <div id="error-msg"></div>
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              class="form-control"
+              id="movieName"
+              placeholder="Movie Name"
+              minlength="3"
+              required
+            />
+            <label for="movieName">Name</label>
+          </div>
+
+          <!-- Movie Rating -->
+          <div class="form-floating mb-4">
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Movie Rating"
+              id="movieRating"
+              min=1
+              max=10
+              required
+            />
+            <label for="movieRating">Rating</label>
+          </div>
+
+          <!-- Movie Type -->
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              class="form-control"
+              id="movieType"
+              placeholder="Movie Type"
+              required
+            />
+            <label for="movieType">Type</label>
+          </div>
+
+          <!-- Movie Release Year -->
+          <div class="form-floating mb-4">
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Movie Release Year"
+              id="movieReleaseYear"
+              required
+            />
+            <label for="movieReleaseYear">Release Year</label>
+          </div>
+
+          <!-- Movie Duration -->
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              class="form-control"
+              id="movieDuration"
+              placeholder="Movie Duration"
+              required
+            />
+            <label for="movieDuration">Time Duration</label>
+          </div>
+
+          <!-- Movie Director -->
+          <div class="form-floating mb-4">
+            <input
+              type="text"
+              class="form-control"
+              id="movieDirector"
+              placeholder="Movie Director"
+              required
+            />
+            <label for="movieDirector">Director</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="movies-display" >
+        <div class="form-floating mb-3 searchBar" >
+            <input type="text" class="form-control" 
+            id="inputSearch"
+            onkeyup="handleSearchMovies()"
+             placeholder="Search here...">
+             <i class="fas fa-search searchIcon"></i>
+            <label for="floatingInput">Search here...</label>
+          </div>
+        <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">Sr no:</th>
+              <th scope="col">Name</th>
+              <th scope="col">Rating</th>
+              <th scope="col">Type</th>
+              <th scope="col">Release Year</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Director</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="movies">
+
+          </tbody>
+          </table>
+      </div>
+    </div>
+
+    <!-- Script files of Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
